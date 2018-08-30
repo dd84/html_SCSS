@@ -1,0 +1,54 @@
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.video {
+  
+    top: 100vh;
+    left: 20;
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    position: absolute;
+ 
+  }
+
+  .MediaContainer {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+     
+      height: 200vh;
+      @include respond(tab-port) {
+            
+        max-height: 60rem;
+        padding:  3rem;
+      }
+      &__video{
+          justify-content: center;
+          height: 90%;
+          width: 100%;
+          flex-grow: 1;
+          padding: 2rem;
+         
+          @include respond(tab-port) {
+            
+            max-height: 30rem;
+            padding:  5rem;
+        }
+      }
+  }
+  
